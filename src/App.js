@@ -1,10 +1,10 @@
 import './App.css';
-import { Footer } from './components';
+import { Footer, FormAsk } from './components';
 
 function App() {
   return (
     <div className="App">
-      {/* <h1 className='text-3x1 font-bold underline'> Prueba de texto en Tailwind</h1> */}
+      <FormAsk />
       <Footer />
     </div>
   );
