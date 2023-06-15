@@ -14,6 +14,9 @@ const FormAsk = () => {
                 <input type="text" placeholder="Gmail" className={styles.fomatElement2} />
             </div>
             <textarea rows="6" cols="25" placeholder="Your Text" className={styles.fomatElement3} />
+            <div className={styles.divButton}>
+              <button className={styles.formatButton}>Enviar</button>
+            </div>
           </form>
         </div>
       </div>
