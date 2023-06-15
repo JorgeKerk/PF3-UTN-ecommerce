@@ -52,3 +52,17 @@
     display: flex;
     justify-content: space-between;
 }
+
+.divButton{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.formatButton{
+    width: 15%;
+    border-radius: 1rem;
+    background-color: var(--terciary-color);
+    padding: 0.4em;
+    font-weight: bold;
+}

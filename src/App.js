@@ -1,9 +1,10 @@
 import './App.css';
-import { Footer, FormAsk } from './components';
+import { Footer, FormAsk, TestiMonials } from './components';
 
 function App() {
   return (
     <div className="App">
+      <TestiMonials />
       <FormAsk />
       <Footer />
     </div>
