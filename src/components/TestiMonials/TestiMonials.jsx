@@ -58,12 +58,12 @@ const TestiMonials = () => {
         }
     };
     return (
-        <section className="testimonials pt-70 pb-70">
-            <div className="container mt-5">
-                <h4 className="minititle text-center w-screen">Clientes Felices</h4>
-                <p className="text-center w-screen">No confíe solo en nuestra palabra: ¡vea lo que nuestros clientes satisfechos tienen que decir sobre sus experiencias comprando con nosotros!</p>
+        <section className="w-screen h-screen flex justify-center">
+            <div className="container">
+                <h4 className="font-semibold text-[2.5rem] mt-16 text-center">Clientes Felices</h4>
+                <p className="text-center">No confíe solo en nuestra palabra: ¡vea lo que nuestros clientes satisfechos tienen que decir sobre sus experiencias comprando con nosotros!</p>
                 <div className="row">
-                    <div className='flex justify-center w-screen'>
+                    <div className='flex justify-center'>
                         <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
                             {
                                 // testiMonials.length === 0 ?
