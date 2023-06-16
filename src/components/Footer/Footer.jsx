@@ -1,5 +1,4 @@
 import React from 'react'
-import './Footer.css'
 import logo from '../../img/bookish.gif'
 import youtube from '../../img/youtube.svg'
 import instagram from '../../img/instagram.svg'
@@ -29,7 +28,7 @@ const Footer = () => {
 
   return (
     <div className='flex flex-col w-screen bg-[var(--terciary-color)]'>
-      <div className='flex justify-center w-screen h-[90%] bg-none subContainer1'>
+      <div className='flex justify-center w-screen h-[90%] bg-none border-b-[0.5px] border-[#000000b3] shadow-[0px_0.5px_2px_0px_rgba(0,77,17,0.685)]'>
         <div className='flex flex-wrap w-4/5'>
           {
             sections.map( (m, ind) =>
