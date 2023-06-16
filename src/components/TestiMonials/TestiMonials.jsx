@@ -64,20 +64,20 @@ const TestiMonials = () => {
                 <p className="text-center">No confíe solo en nuestra palabra: ¡vea lo que nuestros clientes satisfechos tienen que decir sobre sus experiencias comprando con nosotros!</p>
                 <div className="row">
                     <div className='flex justify-center'>
-                        <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>
+                        <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme mt-[2%]" {...options}>
                             {
-                                // testiMonials.length === 0 ?
-                                //     <div class="item">
-                                //         <div class="shadow-effect">
-                                //             <img class="img-circle" src={userPic} />
-
-                                //             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                                //         </div>
-                                //         <div class="testimonial-name">
-                                //             <h5>Rajon Rony</h5>
-                                //             <small>ITALY</small>
-                                //         </div>
-                                //     </div> :
+                                testiMonials.length === 0 ?
+                                    <div className="item">
+                                        <div className="bg-[var(--terciary-color)] p-12 mt-16 rounded-2xl text-center">
+                                            <img className="img-circle relative top-[-6rem] rounded-[50%] m-auto align-middle max-w-[90px] min-h-[90px]" src='' alt=' '/>
+                                            <h5 className='font-bold text-xl mt-[-5.5rem]'>Sin datos</h5>
+                                            <p className='mb-1.5'> </p>
+                                            <div className='flex justify-center gap-2'>
+                                                <p> </p>
+                                            </div>
+                                            <p className='mt-8'> </p>
+                                        </div>
+                                    </div>:
                                     testiMonials.map((testiMonialDetail, ind) => {
                                         return (
                                             <TestiMonialsDetails testiMonialDetail={testiMonialDetail} key={ind} />

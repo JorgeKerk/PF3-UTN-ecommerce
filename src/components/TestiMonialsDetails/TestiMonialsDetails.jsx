@@ -15,7 +15,7 @@ const TestiMonialsDetails = ({testiMonialDetail}) => {
 
     return (
         <div className="item">
-            <div className="shadow-effect p-12 mt-16 rounded-2xl text-center">
+            <div className="bg-[var(--terciary-color)] p-12 mt-16 rounded-2xl text-center">
                 <img className="img-circle relative top-[-6rem] rounded-[50%] m-auto align-middle max-w-[90px] min-h-[90px]" src={img} alt='imgCircle'/>
                 <h5 className='font-bold text-xl mt-[-5.5rem]'>{name}</h5>
                 <p className='mb-1.5'>Mejor Comprador</p>
