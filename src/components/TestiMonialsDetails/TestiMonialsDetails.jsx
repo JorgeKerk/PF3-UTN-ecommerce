@@ -15,14 +15,14 @@ const TestiMonialsDetails = ({testiMonialDetail}) => {
 
     return (
         <div className="item">
-            <div className="shadow-effect">
-                <img className="img-circle" src={img} alt='imgCircle'/>
-                <h5 className='customerName'>{name}</h5>
-                <p className='topbuyer'>Mejor Comprador</p>
+            <div className="bg-[var(--terciary-color)] p-12 mt-16 rounded-2xl text-center">
+                <img className="img-circle relative top-[-6rem] rounded-[50%] m-auto align-middle max-w-[90px] min-h-[90px]" src={img} alt='imgCircle'/>
+                <h5 className='font-bold text-xl mt-[-5.5rem]'>{name}</h5>
+                <p className='mb-1.5'>Mejor Comprador</p>
                 <div className='flex justify-center gap-2'>
                     {printStars().map( viewStar => viewStar )}
                 </div>
-                <p className='descriptionCustomer'>{description}</p>
+                <p className='mt-8'>{description}</p>
             </div>
         </div>
     );

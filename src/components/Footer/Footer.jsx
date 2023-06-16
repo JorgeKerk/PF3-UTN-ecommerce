@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './Footer.module.css'
 import logo from '../../img/bookish.gif'
 import youtube from '../../img/youtube.svg'
 import instagram from '../../img/instagram.svg'
@@ -28,24 +27,24 @@ const Footer = () => {
   ]
 
   return (
-    <div className={styles.container}>
-      <div className={styles.subContainer1}>
-        <div className={styles.divisions}>
+    <div className='flex flex-col w-screen bg-[var(--terciary-color)]'>
+      <div className='flex justify-center w-screen h-[90%] bg-none border-b-[0.5px] border-[#000000b3] shadow-[0px_0.5px_2px_0px_rgba(0,77,17,0.685)]'>
+        <div className='flex flex-wrap w-4/5'>
           {
             sections.map( (m, ind) =>
-              <div key={ind} className={styles.boxDiv}>
-                <h3 className={styles.h3Format}>{m.title}</h3>
+              <div key={ind} className='flex flex-col pt-8 pb-20 px-[3%]'>
+                <h3 className='font-bold mb-4 text-[19px]'>{m.title}</h3>
                 {
                   m.items.map( (i,indI)=> 
-                    <p key={indI} className={styles.pDiv}><Link to='#'>{i}</Link></p>
+                    <p key={indI} className='text-[19px] text-[#313131b3]'><Link to='#'>{i}</Link></p>
                   )
                 }
               </div>
             )
           }
-        <div className={styles.logLinks}>
+        <div className='flex flex-col pt-14 pl-[7.5rem]'>
           <img src={logo} alt="logo de la empresa" width={160}/>
-          <div className={styles.containerLinkIcons}>
+          <div className='flex mt-8 gap-4'>
             <Link to='#'>
               <img src={youtube} alt="youtube" width={30}/>
             </Link>
@@ -62,8 +61,8 @@ const Footer = () => {
         </div>
         </div>
       </div>
-      <div className={styles.subContainer2}>
-        <p className={styles.copyright}>Copyright © 2023 Turo Corporation. Todos los derechos reservados.</p>
+      <div className='flex justify-center'>
+        <p className='text-[#313131b3] py-4'>Copyright © 2023 Turo Corporation. Todos los derechos reservados.</p>
       </div>
     </div>
   )
